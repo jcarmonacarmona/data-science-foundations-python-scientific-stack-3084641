@@ -34,7 +34,7 @@ poly.intersects(Point(10, 20))
 import pandas as pd
 
 df = pd.read_csv(
-    'track.csv',
+    '/workspaces/data-science-foundations-python-scientific-stack-3084641/Ch04/04_03/track.csv',
     parse_dates=['time'],
     index_col='time',
 )
@@ -105,3 +105,4 @@ def add_marker(row):
 
 df.apply(add_marker, axis=1)
 m
+# %%

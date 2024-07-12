@@ -3,7 +3,7 @@ from pathlib import Path
 
 kb = 2**10
 
-csv_file = Path('track.csv')
+csv_file = Path('/workspaces/data-science-foundations-python-scientific-stack-3084641/Ch03/03_02/track.csv')
 csv_file.stat().st_size / kb
 
 # %%

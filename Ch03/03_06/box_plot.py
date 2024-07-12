@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 
-csv_file = 'track.csv'
+csv_file = '/workspaces/data-science-foundations-python-scientific-stack-3084641/Ch03/03_06/track.csv'
 df = pd.read_csv(csv_file, parse_dates=['time'])
 
 lat_km = 92
@@ -28,10 +28,12 @@ speed.describe()
 speed.plot.box()
 
 # %%
+plt.style.available
+# %%
 import matplotlib.pyplot as plt
 
 plt.rcParams['figure.figsize'] = (10, 6)
-plt.style.use('seaborn-whitegrid')
+plt.style.use('seaborn-v0_8-whitegrid')
 speed.plot.box()
 
 # %%

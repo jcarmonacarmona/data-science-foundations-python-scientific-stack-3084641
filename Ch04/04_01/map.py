@@ -2,7 +2,7 @@
 import pandas as pd
 
 df = pd.read_csv(
-    'track.csv',
+    '/workspaces/data-science-foundations-python-scientific-stack-3084641/Ch04/04_01/track.csv',
     parse_dates=['time'],
     index_col='time',
 )
@@ -23,3 +23,4 @@ m
 
 # %%
 m.save('track.html')
+# %%
