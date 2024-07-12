@@ -35,3 +35,5 @@ values[mask]
 
 # %%
 values[mask] = values.mean()
+values[mask]
+# %%

@@ -26,7 +26,8 @@ arr * arr
 # %%
 v1 = np.random.rand(1_000_000)
 v2 = np.random.rand(1_000_000)
-%time v1 * v2
+%time
+v1 * v2
 
 # %%
 arr @ arr
@@ -59,3 +60,4 @@ mat
 
 # %%
 mat.T
+# %%

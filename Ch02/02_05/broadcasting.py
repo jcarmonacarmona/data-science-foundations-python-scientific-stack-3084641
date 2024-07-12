@@ -14,6 +14,8 @@ mat + vec
 v1 = np.arange(3)
 v2 = np.arange(3).reshape((3, 1))
 v2
+v1
 
 # %%
 v1 + v2
+# %%
