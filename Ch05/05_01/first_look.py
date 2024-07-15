@@ -1,7 +1,7 @@
 # %%
 from pathlib import Path
 
-csv_file = Path('taxi.csv')
+csv_file = Path('/workspaces/data-science-foundations-python-scientific-stack-3084641/Ch05/05_01/taxi.csv')
 mb = 2**20
 csv_file.stat().st_size / mb
 
@@ -14,3 +14,4 @@ with csv_file.open() as fp:
         num_lines += 1
 
 print(f'lines: {num_lines:,}')
+# %%
