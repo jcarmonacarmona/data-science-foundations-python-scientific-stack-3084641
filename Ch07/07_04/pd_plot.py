@@ -2,7 +2,7 @@
 import pandas as pd
 
 df = pd.read_csv(
-    'stocks.csv',
+    '/workspaces/data-science-foundations-python-scientific-stack-3084641/Ch07/07_04/stocks.csv',
     parse_dates=['Date'],
     index_col='Date'
 )
@@ -26,3 +26,4 @@ msft['Close'].plot.kde()
     .sum()
     .plot.bar(xticks=range(12), rot=0)
 )
+# %%

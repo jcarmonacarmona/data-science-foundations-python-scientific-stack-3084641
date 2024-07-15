@@ -29,7 +29,7 @@ X, y = cal_housing['data'], cal_housing['target']
 clf = RandomForestRegressor()
 clf.fit(X, y)  # train
 
-# %%
+    # %%
 clf.score(X, y)
 
 # %%

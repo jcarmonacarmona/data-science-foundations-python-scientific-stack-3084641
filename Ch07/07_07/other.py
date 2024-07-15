@@ -2,7 +2,7 @@
 import pandas as pd
 
 df = pd.read_csv(
-    'track.csv',
+    '/workspaces/data-science-foundations-python-scientific-stack-3084641/Ch07/07_07/track.csv',
     parse_dates=['time'],
     index_col='time'
 )
@@ -26,3 +26,4 @@ fig
 
 # %%
 fig.write_html('track.html')
+# %%
