@@ -6,7 +6,7 @@ time_cols = [
     'tpep_dropoff_datetime',
 ]
 df = pd.read_csv(
-    'taxi.csv',
+    '/workspaces/data-science-foundations-python-scientific-stack-3084641/Ch05/05_01/taxi.csv',
     parse_dates=time_cols,
 )
 vendors = {
@@ -61,3 +61,5 @@ ax = s.plot.bar(
     rot=0,
 )
 ax.set_ylabel('Number of Rides')
+
+# %%
