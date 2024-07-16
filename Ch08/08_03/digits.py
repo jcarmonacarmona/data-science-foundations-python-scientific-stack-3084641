@@ -71,3 +71,5 @@ from tensorflow.keras.models import load_model
 
 model1 = load_model('digits.h5')
 model1.predict(X_test[:3]).argmax(axis=1)
+
+# %%

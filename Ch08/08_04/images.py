@@ -1,7 +1,7 @@
 # %%
 import cv2
 
-img = cv2.imread('sign.jpg')
+img = cv2.imread('/workspaces/data-science-foundations-python-scientific-stack-3084641/Ch08/08_04/sign.jpg')
 img.shape
 
 # %%
@@ -23,3 +23,4 @@ plt.imshow(gray, cmap='gray')
 # %%
 edges = cv2.Canny(gray, 80, 150)
 plt.imshow(edges, cmap='gray')
+# %%

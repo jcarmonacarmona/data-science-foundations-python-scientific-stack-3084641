@@ -11,7 +11,7 @@ time_cols = [
 
 with sqlite3.connect('taxi.db') as conn:
     chunks = pd.read_csv(
-        'taxi.csv',
+        '/workspaces/data-science-foundations-python-scientific-stack-3084641/Ch05/05_01/taxi.csv',
         parse_dates=time_cols,
         chunksize=100_000)
 
@@ -40,7 +40,7 @@ df
 import dask.dataframe as dd
 
 ddf = dd.read_csv(
-    'taxi.csv',
+    '/workspaces/data-science-foundations-python-scientific-stack-3084641/Ch05/05_01/taxi.csv',
     parse_dates=time_cols,
     dtype={'VendorID': 'float64'},
 )
@@ -50,3 +50,5 @@ ddf['VendorID'].value_counts()
 
 # %%
 ddf['VendorID'].value_counts().compute()
+
+# %%
